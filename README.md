@@ -61,3 +61,21 @@ p+w+h which could vary from the command line
   <li> Fewer histograms will take more time however more histograms it result in a constant time. The histograms are not as heavily time-dependent as the worker thread and file transfer thread but can make a significant difference if there are few of them.</li>
 </ul>
 
+
+<h2>Observation and Exlpanation:</h2>
+<ul>
+  <li>So the loop in the file transfer function determines the number of file chunks, regardless of
+whatever the worker thread is. The worker thread also uses fopen(), fseek(), and receives data from
+the server increasing which would also increase the time. That's my theory if you were talking about
+the file thread function, but the only thing I can think of the threads interacting with each other is also
+the synchronization variables which could also impact performance. This is also a file transfer, so it
+could have to do with the underlying file system itself.
+</li>
+  <li>The buffer was decreasing because a larger buffer was able to process more information
+*side note: When it comes to running these tests it is also important to note that these results
+depend on the kind of computer the user is using. Some computers don't support multithreading
+and some machines would have issues from a variety of problems. Different machines will have
+different run times, so the values of these graphs are not important but more the patterns they
+produce</li>
+</ul>
+
