@@ -55,8 +55,9 @@ p+w+h which could vary from the command line
 
 
 <h2>Observation and Exlpanation:</h2>
-- If there are more worker threads this will increase performance which will reduce the amount of time to work on a given task.
-- If there are more data points this will take much more time to process the information.
-- Fewer histograms will take more time however more histograms it result in a constant time. The histograms are not as heavily time-dependent as the worker thread and file transfer thread but can make a significant difference if there are few of them.
-
+<ul>
+  <li> If there are more worker threads this will increase performance which will reduce the amount of time to work on a given task.</li>
+  <li>If there are more data points this will take much more time to process the information.</li>
+  <li> Fewer histograms will take more time however more histograms it result in a constant time. The histograms are not as heavily time-dependent as the worker thread and file transfer thread but can make a significant difference if there are few of them.</li>
+</ul>
 
