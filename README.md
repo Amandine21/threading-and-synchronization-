@@ -55,7 +55,7 @@ p+w+h which could vary from the command line
 
 
 <p align="center">
-  <img src=Part_Two>
+  <img src=Part_Two.PNG>
 </p>
 
 
@@ -68,7 +68,7 @@ p+w+h which could vary from the command line
 
 
 <p align="center">
-  <img src=Part_Three>
+  <img src=Part_Three.PNG>
 </p>
 
 
