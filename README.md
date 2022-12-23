@@ -52,3 +52,16 @@ vector and the join function will be used to ensure the threads are completed, F
 program will be outside of the timeval which will get the histogram data and its time to calculate
 the data from every thread. The amount of time will vary since the total number of threads is
 p+w+h which could vary from the command line
+
+
+<h2>Observation and Exlpanation:</h2>
+&emsp; 1) If there are more worker threads this will increase performance which will reduce the
+amount of time to work on a given task.
+
+&emsp; 2) If there are more data points this will take much more time to process the information.
+
+&emsp; 3) Fewer histograms will take more time however more histograms it result in a constant
+time. The histograms are not as heavily time-dependent as the worker thread and file
+transfer thread but can make a significant difference if there are few of them.
+
+
