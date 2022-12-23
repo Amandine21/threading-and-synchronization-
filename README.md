@@ -1,4 +1,4 @@
-# Threading and Snchronization-
+# Threading and Snchronization
 &emsp; The purpose of this programming assignment is to rework the server-client programming
 assignment client’s program to use threads instead of processes when it comes to processing
 data from the server. The original approach took a significant amount of run time since the
